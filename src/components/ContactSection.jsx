@@ -38,20 +38,24 @@ export default function ContactSection({ contactDetails }) {
               description="If you are hiring for a backend role, looking for a Django developer, or need help shaping an API-driven product, I would love to connect."
             />
 
+            <p className="mt-6 text-base font-medium leading-8 text-cyan-100">
+              Open to backend opportunities and freelance projects.
+            </p>
+
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="glass-card rounded-[1.75rem] p-6">
+              <div className="glass-card rounded-[1.75rem] p-6 hover:-translate-y-1 hover:border-cyan-400/20">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                   Email
                 </p>
                 <a
                   href={`mailto:${contactDetails.email}`}
-                  className="mt-3 block text-lg text-white hover:text-cyan-200"
+                  className="mt-3 block break-all text-xl font-semibold text-white hover:text-cyan-200"
                 >
                   {contactDetails.email}
                 </a>
               </div>
 
-              <div className="glass-card rounded-[1.75rem] p-6">
+              <div className="glass-card rounded-[1.75rem] p-6 hover:-translate-y-1 hover:border-cyan-400/20">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                   GitHub
                 </p>
@@ -59,13 +63,13 @@ export default function ContactSection({ contactDetails }) {
                   href={contactDetails.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-3 block text-lg text-white hover:text-cyan-200"
+                  className="mt-3 block text-xl font-semibold text-white hover:text-cyan-200"
                 >
                   github.com/sniipe-er
                 </a>
               </div>
 
-              <div className="glass-card rounded-[1.75rem] p-6 sm:col-span-2">
+              <div className="glass-card rounded-[1.75rem] p-6 sm:col-span-2 hover:-translate-y-1 hover:border-cyan-400/20">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
@@ -88,7 +92,7 @@ export default function ContactSection({ contactDetails }) {
             </div>
           </div>
 
-          <div className="glass-card rounded-[2rem] p-6 sm:p-8">
+          <div className="glass-card rounded-[2rem] p-6 sm:p-8 hover:border-cyan-400/20">
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="block">
@@ -143,7 +147,7 @@ export default function ContactSection({ contactDetails }) {
                 </p>
                 <button
                   type="submit"
-                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 hover:-translate-y-0.5 hover:bg-cyan-100"
+                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/10 hover:-translate-y-0.5 hover:bg-cyan-100"
                 >
                   Send Message
                 </button>

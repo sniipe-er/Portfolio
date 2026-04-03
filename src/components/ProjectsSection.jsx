@@ -7,8 +7,8 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
       <div className="section-shell section-space">
         <SectionHeading
           eyebrow="Projects"
-          title="Backend projects built around auth, permissions, and maintainable product logic."
-          description="CourseCampus is the core project in my portfolio. It shows how I approach Django backend architecture, JWT authentication, role-aware permissions, and API-first delivery for a real application scenario."
+          title="Backend projects focused on authentication, permissions, and real application workflows."
+          description="CourseCampus is the strongest example of how I design backend systems for real use cases, with secure access, role-aware permissions, and API-first architecture."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
@@ -32,23 +32,43 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
                 href={featuredProject.githubUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-cyan-400/30 hover:bg-cyan-400/10"
+                className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-100 hover:-translate-y-0.5 hover:border-cyan-300/40 hover:bg-cyan-400/15"
               >
-                View GitHub
+                View GitHub Repository
               </a>
             </div>
 
             <div className="mt-8 grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">
-              <div>
-                <p className="text-base leading-8 text-slate-400">
-                  {featuredProject.description}
-                </p>
+              <div className="space-y-6">
+                <div className="glass-card rounded-[1.5rem] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                    Problem
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">
+                    Learning platforms need secure access control, different user
+                    roles, and reliable backend workflows for courses,
+                    enrollments, lessons, and assignments.
+                  </p>
+                </div>
 
-                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                <div className="glass-card rounded-[1.5rem] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                    Solution
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">
+                    {featuredProject.title} solves this with a Django and Django
+                    REST Framework backend that handles JWT authentication,
+                    role-based permissions, student enrollment flows, lesson
+                    access control, and assignment submission through an API-only
+                    architecture.
+                  </p>
+                </div>
+
+                <div className="mt-2 grid gap-3 sm:grid-cols-3">
                   {featuredProject.metrics.map((metric) => (
                     <div
                       key={metric.label}
-                      className="glass-card rounded-[1.35rem] p-4"
+                      className="glass-card rounded-[1.35rem] p-4 hover:-translate-y-1 hover:border-cyan-400/20"
                     >
                       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
                         {metric.label}
@@ -60,18 +80,23 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
                   ))}
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-3">
-                  {featuredProject.techStack.map((item) => (
-                    <span key={item} className="tag-pill">
-                      {item}
-                    </span>
-                  ))}
+                <div className="mt-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                    Tech Stack
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    {featuredProject.techStack.map((item) => (
+                      <span key={item} className="tag-pill">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               <div className="glass-card rounded-[1.75rem] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                  Key Features
+                  Backend Features
                 </p>
                 <ul className="mt-5 space-y-4">
                   {featuredProject.features.map((feature) => (
@@ -84,13 +109,28 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
                     </li>
                   ))}
                 </ul>
+
+                <a
+                  href={featuredProject.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-cyan-200 hover:text-cyan-100"
+                >
+                  github.com/sniipe-er/CourseCampus
+                  <span aria-hidden="true">-&gt;</span>
+                </a>
               </div>
             </div>
           </article>
 
           <div className="grid gap-6">
-            {futureProjects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
+            {futureProjects.map((project, index) => (
+              <ProjectCard
+                key={`${project.title}-${index}`}
+                {...project}
+                title="Upcoming Project"
+                status="Planned"
+              />
             ))}
           </div>
         </div>

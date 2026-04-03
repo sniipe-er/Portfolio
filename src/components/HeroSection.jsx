@@ -7,16 +7,16 @@ const focusPills = [
 
 const valueCards = [
   {
-    title: "Backend Systems",
-    copy: "Scalable server-side logic built around clean structure and practical product workflows.",
+    title: "Backend Delivery",
+    copy: "I turn product requirements into secure, structured APIs that frontend teams can build on with confidence.",
   },
   {
-    title: "Security Awareness",
-    copy: "Authentication, permissions, and trust boundaries shaped by cybersecurity studies.",
+    title: "Security Mindset",
+    copy: "Authentication, permissions, and trust boundaries are part of the design process from the start.",
   },
   {
     title: "Remote Ready",
-    copy: "Open to Europe-based backend roles and freelance opportunities.",
+    copy: "Open to backend opportunities and freelance projects across Europe.",
   },
 ];
 
@@ -30,11 +30,11 @@ const endpointRows = [
 export default function HeroSection() {
   return (
     <section id="home" className="scroll-mt-24 pt-32 sm:pt-36">
-      <div className="section-shell pb-20">
+      <div className="section-shell pb-20 sm:pb-24">
         <div className="grid gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <div className="motion-safe:animate-fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-emerald-100">
-              Backend Developer • Open to remote work in Europe
+              Backend Developer | Open to remote work in Europe
             </span>
 
             <div className="mt-8 space-y-6">
@@ -45,22 +45,22 @@ export default function HeroSection() {
                 </span>
               </h1>
 
-              <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-                I build scalable and secure backend systems with Django and REST
-                APIs.
+              <p className="max-w-2xl text-xl leading-9 text-slate-200 sm:text-2xl">
+                I build secure, scalable backend systems with Django and REST
+                APIs for real product workflows.
               </p>
 
-              <p className="max-w-2xl text-base leading-8 text-slate-400">
-                I focus on backend product logic, authentication flows,
-                permission-aware systems, and structured APIs that are ready for
-                real frontend integration.
+              <p className="max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+                From authentication and role-based permissions to structured API
+                architecture, I deliver backend foundations that are reliable,
+                maintainable, and ready for production growth.
               </p>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 hover:-translate-y-0.5 hover:bg-cyan-100"
+                className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/10 hover:-translate-y-0.5 hover:bg-cyan-100"
               >
                 View Projects
               </a>
@@ -68,7 +68,7 @@ export default function HeroSection() {
                 href="#contact"
                 className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:bg-cyan-400/10"
               >
-                Contact
+                Contact Me
               </a>
             </div>
 
@@ -84,7 +84,7 @@ export default function HeroSection() {
               {valueCards.map((item, index) => (
                 <article
                   key={item.title}
-                  className="glass-card rounded-3xl p-5 motion-safe:animate-fade-up"
+                  className="glass-card rounded-3xl p-5 motion-safe:animate-fade-up hover:-translate-y-1 hover:border-cyan-400/20"
                   style={{ animationDelay: `${120 + index * 110}ms` }}
                 >
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">
@@ -150,21 +150,22 @@ export default function HeroSection() {
               </div>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <div className="glass-card rounded-[1.5rem] p-5">
+                <div className="glass-card rounded-[1.5rem] p-5 hover:-translate-y-1 hover:border-cyan-400/20">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
                     Highlight Project
                   </p>
                   <p className="mt-3 text-lg text-white">
-                    CourseCampus LMS backend with custom roles, access control,
-                    and authenticated learning flows.
+                    CourseCampus backend with authentication, custom roles,
+                    enrollment control, and assignment workflows.
                   </p>
                 </div>
-                <div className="glass-card rounded-[1.5rem] p-5">
+                <div className="glass-card rounded-[1.5rem] p-5 hover:-translate-y-1 hover:border-cyan-400/20">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                    Hiring Goal
+                    Value Delivered
                   </p>
                   <p className="mt-3 text-lg text-white">
-                    Remote backend roles and freelance API work across Europe.
+                    Reliable backend architecture built for secure access,
+                    clean integration, and long-term maintainability.
                   </p>
                 </div>
               </div>

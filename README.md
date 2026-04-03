@@ -1,32 +1,41 @@
 # Sayf Allah JAMAI Portfolio
 
-A modern personal portfolio built for a backend developer focused on Django, Django REST Framework, REST APIs, and JWT authentication.
+A professional backend developer portfolio built with React, Vite, and Tailwind CSS to showcase Django, Django REST Framework, JWT authentication, and API-focused backend work.
 
-## Overview
+## Project Description
 
-This project is a recruiter-ready developer portfolio designed to present backend work with a clean, premium, dark SaaS-inspired interface. It highlights technical strengths, showcases the CourseCampus LMS backend API, and provides a polished contact experience.
+This portfolio presents Sayf Allah JAMAI as a backend developer with a cybersecurity background, focused on building secure, scalable backend systems for modern web products. The project is designed as a polished, recruiter-friendly portfolio with a dark premium interface, clear technical positioning, and a strong featured project section.
 
-## Live Demo
+## Featured Project
 
-- Live demo: Add your deployed URL here
+### CourseCampus - LMS Backend API
 
-## Screenshots
+CourseCampus is the main featured project in this portfolio. It is a backend-first Learning Management System API built to solve the need for secure authentication, role-based access, structured course management, student enrollment flows, lesson protection, and assignment handling.
 
-- Add homepage screenshot here
-- Add projects section screenshot here
-- Add mobile view screenshot here
+Built with Django and Django REST Framework, it demonstrates:
 
-![Portfolio Preview](./public/site-preview.svg)
+- JWT authentication
+- Custom user roles for Student, Instructor, and Admin
+- Role-based permissions
+- Course creation and management
+- Student enrollment workflows
+- Lesson access control
+- Assignment submission handling
+- API-only backend architecture
+
+Repository:
+
+- https://github.com/sniipe-er/CourseCampus
 
 ## Features
 
-- Modern dark theme with glassmorphism UI
-- Responsive layout for desktop, tablet, and mobile
-- Sticky navigation with smooth scrolling
+- Modern dark portfolio interface with responsive layout
 - Hero, About, Projects, Skills, Contact, and Footer sections
-- Featured project spotlight for CourseCampus
-- Contact form UI that prepares an email draft with `mailto:`
-- Custom favicon and social preview metadata
+- Featured backend project spotlight
+- Clear presentation of backend skills and stack
+- Sticky navigation with smooth scrolling
+- Contact form UI using `mailto:`
+- Custom favicon and social preview assets
 
 ## Tech Stack
 
@@ -35,46 +44,7 @@ This project is a recruiter-ready developer portfolio designed to present backen
 - Tailwind CSS
 - JavaScript
 
-## Featured Project
-
-### CourseCampus - LMS Backend API
-
-CourseCampus is a backend-first Learning Management System API built with Django and Django REST Framework.
-
-Key functionality:
-
-- Custom user model with Student, Instructor, and Admin roles
-- JWT authentication with access and refresh tokens
-- Role-based permissions
-- Course creation and management
-- Student enrollment flows
-- Lesson access control for enrolled students
-- Assignment submission handling
-- API-only backend architecture
-
-Repository:
-
-- https://github.com/sniipe-er/CourseCampus
-
-## Project Structure
-
-```text
-src/
-  components/
-  pages/
-  App.jsx
-  index.css
-  main.jsx
-public/
-  favicon.svg
-  site-preview.svg
-index.html
-package.json
-tailwind.config.js
-vite.config.js
-```
-
-## Getting Started
+## Setup
 
 ### 1. Clone the repository
 
@@ -107,32 +77,14 @@ npm run build
 npm run preview
 ```
 
-## Customization
+## Live Demo
 
-Update portfolio content from:
+- Live demo: Add your deployed portfolio URL here
 
-- `src/pages/HomePage.jsx`
+## Screenshots
 
-Update page metadata from:
+- Add homepage screenshot here
+- Add projects section screenshot here
+- Add mobile screenshot here
 
-- `index.html`
-
-Update global styling from:
-
-- `src/index.css`
-
-## Deployment
-
-This Vite project is ready to deploy on:
-
-- Vercel
-- Netlify
-- GitHub Pages
-
-Before deploying, replace the placeholder email address in:
-
-- `src/pages/HomePage.jsx`
-
-## License
-
-Personal portfolio project by Sayf Allah JAMAI.
+![Portfolio Preview](./public/site-preview.svg)
