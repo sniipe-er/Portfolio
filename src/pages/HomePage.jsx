@@ -119,7 +119,10 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection highlights={aboutHighlights} />
-        <ProjectsSection featuredProject={featuredProject} futureProjects={futureProjects} />
+        <ProjectsSection
+          featuredProject={featuredProject}
+          futureProjects={futureProjects}
+        />
         <SkillsSection skillGroups={skillGroups} />
         <ContactSection contactDetails={contactDetails} />
       </main>
