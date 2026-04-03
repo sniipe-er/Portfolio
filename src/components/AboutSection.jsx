@@ -8,22 +8,41 @@ export default function AboutSection({ highlights }) {
           <div className="motion-safe:animate-fade-up">
             <SectionHeading
               eyebrow="About Me"
-              title="Backend development with a security-first mindset."
-              description="I’m Sayf, a student specializing in cybersecurity and backend development. I enjoy turning complex product requirements into backend systems that feel secure, structured, and ready to scale."
+              title="Backend development shaped by APIs, authentication, and secure system design."
+              description="I am Sayf Allah JAMAI, a backend developer and cybersecurity student focused on building clean server-side systems with Django and Django REST Framework."
             />
 
             <div className="mt-8 space-y-5 text-base leading-8 text-slate-400">
               <p>
-                My strongest focus is the Django ecosystem, especially Django
-                REST Framework, authentication flows, role-based permissions,
-                and practical API architecture.
+                My strongest focus is building REST APIs, authentication flows,
+                role-based permissions, and maintainable backend structures that
+                support real product workflows.
               </p>
               <p>
-                I&apos;m building toward remote backend opportunities in Europe
-                where I can contribute to real products, grow with experienced
-                teams, and keep sharpening both my engineering and security
-                instincts.
+                I am working toward remote backend opportunities in Europe where
+                I can contribute to production teams, keep growing as an
+                engineer, and bring a security-aware mindset into backend
+                delivery.
               </p>
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="glass-card rounded-[1.5rem] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                  Core Focus
+                </p>
+                <p className="mt-3 text-lg text-white">
+                  Django APIs, JWT authentication, and backend product logic.
+                </p>
+              </div>
+              <div className="glass-card rounded-[1.5rem] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                  Career Direction
+                </p>
+                <p className="mt-3 text-lg text-white">
+                  Remote backend roles and freelance work across Europe.
+                </p>
+              </div>
             </div>
           </div>
 

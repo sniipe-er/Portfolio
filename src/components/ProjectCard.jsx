@@ -1,6 +1,7 @@
 export default function ProjectCard({ title, status, summary, tags, cta }) {
   return (
-    <article className="glass-card group rounded-[1.75rem] p-6 hover:-translate-y-1 hover:border-cyan-400/20">
+    <article className="glass-card group relative overflow-hidden rounded-[1.75rem] p-6 hover:-translate-y-1 hover:border-cyan-400/20">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-300/70 to-transparent opacity-70" />
       <div className="flex items-center justify-between gap-4">
         <h3 className="text-xl text-white">{title}</h3>
         <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-300">

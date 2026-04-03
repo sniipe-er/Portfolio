@@ -1,22 +1,29 @@
-const highlights = [
+const focusPills = [
+  "Django REST Framework",
+  "JWT Authentication",
+  "Role-Based Access",
+  "API Architecture",
+];
+
+const valueCards = [
   {
-    title: "JWT & Auth Flows",
-    copy: "Secure token-based authentication and permission-aware backend access.",
+    title: "Backend Systems",
+    copy: "Scalable server-side logic built around clean structure and practical product workflows.",
   },
   {
-    title: "REST API Delivery",
-    copy: "API-first backend systems designed for maintainability and frontend handoff.",
+    title: "Security Awareness",
+    copy: "Authentication, permissions, and trust boundaries shaped by cybersecurity studies.",
   },
   {
-    title: "Cybersecurity Mindset",
-    copy: "Security-aware engineering choices shaped by cybersecurity studies.",
+    title: "Remote Ready",
+    copy: "Open to Europe-based backend roles and freelance opportunities.",
   },
 ];
 
 const endpointRows = [
-  { label: "/api/v1/auth/login", status: "200 OK" },
+  { label: "/api/v1/auth/login", status: "JWT Ready" },
   { label: "/api/v1/courses", status: "Protected" },
-  { label: "/api/v1/enrollments", status: "Active" },
+  { label: "/api/v1/enrollments", status: "Role Aware" },
   { label: "/api/v1/assignments", status: "Tracked" },
 ];
 
@@ -27,7 +34,7 @@ export default function HeroSection() {
         <div className="grid gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <div className="motion-safe:animate-fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-emerald-100">
-              Open to remote backend roles in Europe
+              Backend Developer • Open to remote work in Europe
             </span>
 
             <div className="mt-8 space-y-6">
@@ -44,9 +51,9 @@ export default function HeroSection() {
               </p>
 
               <p className="max-w-2xl text-base leading-8 text-slate-400">
-                Backend-focused developer with a growing foundation in
-                cybersecurity, building clean API architectures, authentication
-                flows, and permission-driven systems for modern products.
+                I focus on backend product logic, authentication flows,
+                permission-aware systems, and structured APIs that are ready for
+                real frontend integration.
               </p>
             </div>
 
@@ -61,12 +68,20 @@ export default function HeroSection() {
                 href="#contact"
                 className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 hover:-translate-y-0.5 hover:border-cyan-400/30 hover:bg-cyan-400/10"
               >
-                Contact Me
+                Contact
               </a>
             </div>
 
+            <div className="mt-8 flex flex-wrap gap-3">
+              {focusPills.map((pill) => (
+                <span key={pill} className="tag-pill">
+                  {pill}
+                </span>
+              ))}
+            </div>
+
             <div className="mt-12 grid gap-4 sm:grid-cols-3">
-              {highlights.map((item, index) => (
+              {valueCards.map((item, index) => (
                 <article
                   key={item.title}
                   className="glass-card rounded-3xl p-5 motion-safe:animate-fade-up"
@@ -87,7 +102,7 @@ export default function HeroSection() {
             <div className="absolute -left-8 top-10 hidden h-28 w-28 rounded-full bg-cyan-400/15 blur-3xl sm:block" />
             <div className="absolute -right-4 bottom-2 h-32 w-32 rounded-full bg-emerald-400/10 blur-3xl" />
 
-            <div className="border-gradient relative overflow-hidden rounded-[2rem] bg-slate-950/75 p-6 shadow-soft backdrop-blur-xl sm:p-8">
+            <div className="border-gradient relative overflow-hidden rounded-[2rem] bg-slate-950/75 p-6 shadow-soft backdrop-blur-xl motion-safe:animate-float sm:p-8">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-rose-400" />
@@ -95,7 +110,7 @@ export default function HeroSection() {
                   <span className="h-3 w-3 rounded-full bg-emerald-400" />
                 </div>
                 <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-100">
-                  Backend System Online
+                  Production-minded
                 </span>
               </div>
 
@@ -103,10 +118,10 @@ export default function HeroSection() {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                      Active Focus
+                      Current Focus
                     </p>
                     <h2 className="mt-3 text-2xl text-white">
-                      API architecture for secure learning platforms
+                      Secure backend APIs for structured learning products
                     </h2>
                   </div>
                   <div className="hidden rounded-2xl border border-cyan-400/15 bg-cyan-400/10 px-4 py-3 text-right sm:block">
@@ -137,16 +152,16 @@ export default function HeroSection() {
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 <div className="glass-card rounded-[1.5rem] p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                    Best Work
+                    Highlight Project
                   </p>
                   <p className="mt-3 text-lg text-white">
-                    CourseCampus LMS backend with auth, permissions, and gated
-                    learning flows.
+                    CourseCampus LMS backend with custom roles, access control,
+                    and authenticated learning flows.
                   </p>
                 </div>
                 <div className="glass-card rounded-[1.5rem] p-5">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-                    Career Goal
+                    Hiring Goal
                   </p>
                   <p className="mt-3 text-lg text-white">
                     Remote backend roles and freelance API work across Europe.

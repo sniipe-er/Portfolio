@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#030712" />
+  <g opacity=".9">
+    <circle cx="260" cy="170" r="220" fill="#0f766e" fill-opacity=".18" />
+    <circle cx="1310" cy="170" r="210" fill="#0891b2" fill-opacity=".2" />
+  </g>
+  <rect x="80" y="70" width="1440" height="760" rx="36" fill="#081121" stroke="#ffffff" stroke-opacity=".08" />
+  <rect x="130" y="118" width="1340" height="62" rx="31" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".08" />
+  <circle cx="176" cy="149" r="18" fill="#0f172a" stroke="#22d3ee" stroke-opacity=".45" />
+  <text x="176" y="156" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" font-size="16" font-weight="700">SAJ</text>
+  <text x="235" y="152" fill="#f8fafc" font-family="Arial, sans-serif" font-size="18" font-weight="700">Sayf Allah JAMAI</text>
+  <text x="235" y="174" fill="#64748b" font-family="Arial, sans-serif" font-size="14">Backend Developer</text>
+  <text x="980" y="156" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">About</text>
+  <text x="1055" y="156" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Projects</text>
+  <text x="1148" y="156" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Skills</text>
+  <text x="1223" y="156" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Contact</text>
+  <rect x="1275" y="131" width="150" height="36" rx="18" fill="#22d3ee" fill-opacity=".12" stroke="#22d3ee" stroke-opacity=".32" />
+  <text x="1350" y="154" text-anchor="middle" fill="#cffafe" font-family="Arial, sans-serif" font-size="14" font-weight="700">Let's Talk</text>
+  <rect x="130" y="230" width="190" height="34" rx="17" fill="#10b981" fill-opacity=".14" stroke="#10b981" stroke-opacity=".3" />
+  <text x="225" y="252" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="12" font-weight="700">OPEN TO REMOTE WORK IN EUROPE</text>
+  <text x="130" y="352" fill="#f8fafc" font-family="Arial, sans-serif" font-size="68" font-weight="700">Sayf Allah JAMAI</text>
+  <text x="130" y="420" fill="url(#grad)" font-family="Arial, sans-serif" font-size="42" font-weight="700">Backend Developer | Django &amp; REST APIs</text>
+  <text x="130" y="492" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="26">I build scalable and secure backend systems with Django and REST APIs.</text>
+  <rect x="130" y="548" width="174" height="56" rx="28" fill="#f8fafc" />
+  <text x="217" y="583" text-anchor="middle" fill="#020617" font-family="Arial, sans-serif" font-size="16" font-weight="700">View Projects</text>
+  <rect x="324" y="548" width="156" height="56" rx="28" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1" />
+  <text x="402" y="583" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="16" font-weight="700">Contact</text>
+  <rect x="900" y="230" width="520" height="438" rx="34" fill="#020617" fill-opacity=".72" stroke="#7dd3fc" stroke-opacity=".28" />
+  <circle cx="948" cy="272" r="6" fill="#fb7185" />
+  <circle cx="970" cy="272" r="6" fill="#fbbf24" />
+  <circle cx="992" cy="272" r="6" fill="#34d399" />
+  <rect x="1230" y="252" width="146" height="34" rx="17" fill="#10b981" fill-opacity=".14" stroke="#10b981" stroke-opacity=".3" />
+  <text x="1303" y="274" text-anchor="middle" fill="#d1fae5" font-family="Arial, sans-serif" font-size="11" font-weight="700">PRODUCTION-MINDED</text>
+  <rect x="938" y="320" width="444" height="170" rx="26" fill="#0f172a" fill-opacity=".9" stroke="#ffffff" stroke-opacity=".08" />
+  <text x="968" y="360" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="700">CURRENT FOCUS</text>
+  <text x="968" y="402" fill="#f8fafc" font-family="Arial, sans-serif" font-size="28" font-weight="700">Secure backend APIs for</text>
+  <text x="968" y="438" fill="#f8fafc" font-family="Arial, sans-serif" font-size="28" font-weight="700">structured learning products</text>
+  <rect x="968" y="522" width="182" height="100" rx="22" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".08" />
+  <text x="992" y="550" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="700">HIGHLIGHT PROJECT</text>
+  <text x="992" y="585" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="700">CourseCampus</text>
+  <text x="992" y="612" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">LMS backend API</text>
+  <rect x="1172" y="522" width="182" height="100" rx="22" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".08" />
+  <text x="1196" y="550" fill="#64748b" font-family="Arial, sans-serif" font-size="12" font-weight="700">HIRING GOAL</text>
+  <text x="1196" y="585" fill="#f8fafc" font-family="Arial, sans-serif" font-size="20" font-weight="700">Remote backend</text>
+  <text x="1196" y="612" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="14">Europe + freelance</text>
+  <defs>
+    <linearGradient id="grad" x1="130" y1="392" x2="760" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fafc" />
+      <stop offset=".55" stop-color="#67e8f9" />
+      <stop offset="1" stop-color="#6ee7b7" />
+    </linearGradient>
+  </defs>
+</svg>

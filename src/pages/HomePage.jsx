@@ -10,7 +10,12 @@ const featuredProject = {
   title: "CourseCampus",
   subtitle: "LMS Backend API",
   description:
-    "A production-minded Learning Management System backend built with Django and Django REST Framework, designed around secure authentication, role-driven workflows, and API-first product delivery.",
+    "CourseCampus is a backend-first Learning Management System API built with Django and Django REST Framework. It is designed around secure authentication, role-driven workflows, and structured REST endpoints for real product scenarios.",
+  metrics: [
+    { label: "User Roles", value: "3 Roles" },
+    { label: "Authentication", value: "JWT" },
+    { label: "Architecture", value: "API Only" },
+  ],
   techStack: [
     "Django",
     "Django REST Framework",
@@ -30,21 +35,21 @@ const featuredProject = {
 
 const futureProjects = [
   {
-    title: "Project Slot 02",
-    status: "Coming next",
+    title: "Backend Product Slot",
+    status: "Next Build",
     summary:
-      "Reserved for the next backend product, freelance API build, or security-focused web platform.",
-    tags: ["Backend Architecture", "API Design", "Deployment Ready"],
+      "Reserved for the next production-focused backend project, whether that is a multi-tenant API, internal platform, or security-aware web application.",
+    tags: ["Backend Architecture", "API Design", "Production Ready"],
     cta: {
-      label: "Start a Project",
+      label: "Discuss a Project",
       href: "#contact",
     },
   },
   {
-    title: "Project Slot 03",
-    status: "Open for work",
+    title: "Freelance API Partner",
+    status: "Available Now",
     summary:
-      "Available for remote backend roles and freelance collaborations across Europe, with a focus on secure Django systems.",
+      "Open to remote backend freelance collaborations across Europe, with a focus on Django APIs, authentication flows, and clean application structure.",
     tags: ["Remote Europe", "Freelance", "Django"],
     cta: {
       label: "Contact Me",
@@ -78,14 +83,19 @@ const skillGroups = [
 
 const aboutHighlights = [
   {
-    title: "Security-aware by default",
+    title: "Security-aware engineering",
     description:
-      "My cybersecurity background shapes how I think about authentication, access control, and backend trust boundaries.",
+      "My cybersecurity background shapes the way I think about authentication, access control, and backend trust boundaries.",
   },
   {
-    title: "Focused on API quality",
+    title: "API-first backend thinking",
     description:
-      "I enjoy designing REST APIs that feel predictable, maintainable, and easy for frontend teams to build on.",
+      "I enjoy designing REST APIs that feel predictable, maintainable, and practical for frontend teams to integrate with.",
+  },
+  {
+    title: "Systems with clean structure",
+    description:
+      "I care about readable backend code, maintainable app logic, and foundations that can grow with real product requirements.",
   },
   {
     title: "Open to Europe-based remote work",
@@ -95,9 +105,10 @@ const aboutHighlights = [
 ];
 
 const contactDetails = {
-  email: "hello@sayfallahjamai.dev",
+  email: "sayfjm688@gmail.com",
   github: "https://github.com/sniipe-er",
   availability: "Available for remote backend roles and freelance work in Europe.",
+  location: "Based in Morocco, open to remote work across Europe.",
 };
 
 export default function HomePage() {

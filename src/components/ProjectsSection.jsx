@@ -7,8 +7,8 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
       <div className="section-shell section-space">
         <SectionHeading
           eyebrow="Projects"
-          title="Backend work built around product logic, auth, and maintainable APIs."
-          description="CourseCampus is the centerpiece of my current portfolio: a backend-first learning platform that demonstrates how I design secure user flows, role-driven permissions, and practical REST endpoints."
+          title="Backend projects built around auth, permissions, and maintainable product logic."
+          description="CourseCampus is the core project in my portfolio. It shows how I approach Django backend architecture, JWT authentication, role-aware permissions, and API-first delivery for a real application scenario."
         />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
@@ -43,6 +43,22 @@ export default function ProjectsSection({ featuredProject, futureProjects }) {
                 <p className="text-base leading-8 text-slate-400">
                   {featuredProject.description}
                 </p>
+
+                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                  {featuredProject.metrics.map((metric) => (
+                    <div
+                      key={metric.label}
+                      className="glass-card rounded-[1.35rem] p-4"
+                    >
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+                        {metric.label}
+                      </p>
+                      <p className="mt-3 text-lg font-semibold text-white">
+                        {metric.value}
+                      </p>
+                    </div>
+                  ))}
+                </div>
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   {featuredProject.techStack.map((item) => (

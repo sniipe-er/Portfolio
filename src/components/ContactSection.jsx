@@ -35,10 +35,10 @@ export default function ContactSection({ contactDetails }) {
             <SectionHeading
               eyebrow="Contact"
               title="Let&apos;s build secure, reliable backend products together."
-              description="If you&apos;re hiring for a backend role, looking for a Django developer, or need help shaping an API-driven product, I&apos;d love to connect."
+              description="If you are hiring for a backend role, looking for a Django developer, or need help shaping an API-driven product, I would love to connect."
             />
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="glass-card rounded-[1.75rem] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
                   Email
@@ -65,13 +65,25 @@ export default function ContactSection({ contactDetails }) {
                 </a>
               </div>
 
-              <div className="glass-card rounded-[1.75rem] p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
-                  Availability
-                </p>
-                <p className="mt-3 text-base leading-7 text-slate-300">
-                  {contactDetails.availability}
-                </p>
+              <div className="glass-card rounded-[1.75rem] p-6 sm:col-span-2">
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                      Availability
+                    </p>
+                    <p className="mt-3 text-base leading-7 text-slate-300">
+                      {contactDetails.availability}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+                      Location
+                    </p>
+                    <p className="mt-3 text-base leading-7 text-slate-300">
+                      {contactDetails.location}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -126,8 +138,8 @@ export default function ContactSection({ contactDetails }) {
 
               <div className="flex flex-col gap-4 border-t border-white/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
                 <p className="text-sm leading-6 text-slate-500">
-                  This form opens your email client with the message ready to
-                  send.
+                  This form prepares an email draft in the visitor&apos;s email
+                  client.
                 </p>
                 <button
                   type="submit"
